@@ -32,7 +32,8 @@ public class Review2 {
         String dept = "IT";
         String fullId = dept + id + (id + 1) + dept.length();
         System.out.println("Q1: " + fullId);
-        System.out.println("Test");
+        //test
+        
     }
 //comment test
     static void question2() {
