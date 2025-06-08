@@ -32,19 +32,18 @@ public class Review2 {
         String dept = "IT";
         String fullId = dept + id + (id + 1) + dept.length();
         System.out.println("Q1: " + fullId);
-        //testing
-        
     }
-//comment test
+//Q1: IT50512
+    
     static void question2() {
         String[][] table = {
             {"Math", "90"},
             {"English", "85"}
         };
         System.out.println("Q2: " + table[1][0] + ": " + table[1][1]);
-        System.out.println("Test");
     }
-
+//Q2: English: 85
+    
     static void question3() {
         var date = java.time.LocalDate.of(2022, 10, 30);
         var time = java.time.LocalTime.of(1, 0);
@@ -53,7 +52,8 @@ public class Review2 {
         var shifted = zdt.plusHours(1);
         System.out.println("Q3: " + zdt + " → " + shifted);
     }
-
+//
+    
     static void question4() {
         String x = "Course101";
         String y = "Course" + "101";
