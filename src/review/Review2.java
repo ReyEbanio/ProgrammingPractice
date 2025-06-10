@@ -2,7 +2,6 @@ package review;
 
 public class Review2 {
 	public static void main(String[] args) {
-		System.out.println("Test");
 	    question1();
         question2();
         question3();
@@ -52,6 +51,7 @@ public class Review2 {
         var shifted = zdt.plusHours(1);
         System.out.println("Q3: " + zdt + " → " + shifted);
     }
+//Europe October 30, 2Am goes back to 1Am
 //Q3: 2022-10-30T01:00 [Europe/London]  -> 2022-10-30T03:00 [Europe/London]
     
     static void question4() {
@@ -69,6 +69,7 @@ public class Review2 {
         log.replace(9, 13, "LOGOUT");
         System.out.println("Q5: " + log);
     }
+//Q5: [SYSTEM] LOGOUTN:user123
 //Q5: [SYSTEM]LLOGOUT:user123
     
     static void question6() {
@@ -86,6 +87,7 @@ public class Review2 {
         var after = dt.plusHours(1);
         System.out.println("Q7: " + dt + " → " + after);
     }
+//In 2022, Europe/Berlin switches to DST on: March 27, 2022, at 2:00 AM.
 //Q7:2022-03-27T03:30[Europe/Berlin] -> 2022-03-27T04:30[Europe/Berlin]
     
     static void question8() {
@@ -116,7 +118,7 @@ public class Review2 {
         date = date.plusDays(10);
         System.out.println("Q11: " + date);
     }
-//Q11: 2023-01-15
+//Q11: 2023-01-25
     
     static void question12() {
         String msg = "  \tMessage\nLine2 ";
@@ -147,6 +149,7 @@ public class Review2 {
         var instant = zdt.toInstant();
         System.out.println("Q14: " + instant);
     }
+//Asia/Tokyo is UTC+9 and does not observe DST.
 //Q14: 2023-12-01T08:00[Asia/Tokyo]
     
     static void question15() {
@@ -155,9 +158,10 @@ public class Review2 {
         int idx = java.util.Arrays.binarySearch(courses, "English");
         System.out.println("Q15: " + java.util.Arrays.toString(courses) + ", Index: " + idx);
     }
+
 //Biology, Chemistry, Physics
 //Q15: Physics, Biology, Chemistry, Index: -2
-    
+
     static void question16() {
         String msg = "abc\\ndef\\tghi";
         String fixed = msg.translateEscapes();
@@ -189,6 +193,7 @@ public class Review2 {
         int diff = java.util.Arrays.compare(x, y);
         System.out.println("Q19: " + diff);
     }
+//Unpredictable Greater than 0
 //Q19: 1
     
     static void question20() {
@@ -200,6 +205,7 @@ public class Review2 {
         var after = before.plusHours(1);
         System.out.println("Q20: " + before.getOffset() + " → " + after.getOffset());
     }
+//Get offset gives aways number
 //Q20: 2022-10-30T01:30[Europe/London] -> 2022-10-30T03:30[Europe/London] 
     
     static void question21() {
@@ -214,5 +220,5 @@ public class Review2 {
         var next = date.plusYears(1);
         System.out.println("Q22: " + next);
 	}
-//Q22: 2020-02-28
+//Q22: 2021-02-28
 }
