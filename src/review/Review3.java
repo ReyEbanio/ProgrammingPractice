@@ -26,6 +26,15 @@ public class Review3 {
 	        question22();
 	    }
 
+    static void question19s() {
+        String[] a = {"ENG", "MATH"};
+        String[] b = {"ENG", "SCI"};
+        int cmp = java.util.Arrays.compare(a, b);
+        System.out.println("Q19: Comparison result: " + cmp);
+        //-6
+        
+    }
+	//Q19: Comaparison result: -6
 	    static void question1() {
 	        int year = 2025;
 	        String dept = "ENG";
@@ -81,8 +90,11 @@ public class Review3 {
 	    static void question7() {
 	        var zone = java.time.ZoneId.of("Asia/Manila"); // UTC+8, no DST
 	        var dt = java.time.ZonedDateTime.of(2022, 6, 1, 9, 0, 0, 0, zone);
+	        //Philippines is +8 UTC - 9AM
+	        //Europe +1 UTC - 2Am
+	        //Converted to Europe by getting the time in europe in the same instant
 	        var dt2 = dt.withZoneSameInstant(java.time.ZoneId.of("Europe/London")); // UTC+1 (DST)
-	        System.out.println("Q7: PH: " + dt + ", UK: " + dt2);
+	        System.out.println("Q7: PH: " + dt + "\n, UK: " + dt2);
 	    }
 //Q7: PH:2022-06-01T09:00[Asia/Manila],UK: 2022-06-01T08:00["Europe/London"]
 	    
@@ -117,7 +129,7 @@ public class Review3 {
 	        java.time.LocalDate due = start.plusDays(21);
 	        System.out.println("Q11: Start: " + start + ", Due: " + due);
 	    }
-//Q11: Start: 2023-09-01, Due: 2023-09-30 
+//Q11: Start: 2023-09-01, Due: 2023-09-22
 	    
 	    static void question12() {
 	        String input = "  \tHello\nWorld  ";
@@ -147,6 +159,7 @@ public class Review3 {
 	        var instant = zdt.toInstant();
 	        System.out.println("Q14: Instant: " + instant);
 	    }
+	    //just retain value
 //Q14: Instant: 2024-10-05T00:00
 	    
 	    static void question15() {
@@ -156,7 +169,7 @@ public class Review3 {
 	        System.out.println("Q15: " + java.util.Arrays.toString(names) + ""
 	        		+ ", Search 'Ben': " + result);
 	    }
-//Q15: [Anna, Mark, Zoe], Search 'Ben': -5
+//Q15: [Anna, Mark, Zoe], Search 'Ben': -2
 	    
 	    static void question16() {
 	        String escaped = "Hello\\nWorld\\t!";
@@ -166,7 +179,7 @@ public class Review3 {
 	        //Hello
 	        //World
 	    }
-//Q16: Original len: 14, After translate: 12
+//Q16: Original len: 15, After translate: 13
 	    
 	    static void question17() {
 	        StringBuilder sb = new StringBuilder("Grade=A+");
@@ -190,6 +203,7 @@ public class Review3 {
 	        String[] b = {"ENG", "SCI"};
 	        int cmp = java.util.Arrays.compare(a, b);
 	        System.out.println("Q19: Comparison result: " + cmp);
+	        //-6
 	    }
 //Q19: Comparison result: any positive unpredictable
 	    
@@ -211,7 +225,8 @@ public class Review3 {
 	        sb.append("X!").delete(0, 2).deleteCharAt(sb.length() - 1).reverse();
 	        System.out.println("Q21: " + sb);
 	    }
-//Q21: X321P
+//Q21: X321PM
+	    
 	    static void question22() {
 	        java.time.LocalDate leap = java.time.LocalDate.of(2024, 2, 29);
 	        java.time.LocalDate next = leap.plusYears(1);
