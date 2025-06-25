@@ -14,7 +14,7 @@ public class Bank {
 		persons.transaction("Rissa", 5900.50 );
 		persons.transaction("Rissa", -590.50 );
 		
-		System.out.println(persons.transactionAccount);
+		System.out.println(transactionAccount);
 		testAssign();
 		System.out.println(username);
 	}
