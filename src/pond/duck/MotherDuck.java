@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 package pond.duck;
 
 public class MotherDuck {
@@ -18,3 +10,5 @@ public class MotherDuck {
     	   quack();
        }
 }
+//ability to upload all sf1
+
