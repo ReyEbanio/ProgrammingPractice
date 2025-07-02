@@ -7,7 +7,7 @@ public class GrandSon extends Son {
 	{System.out.println("GrandSon class initialization");}
 
 	public GrandSon() {
-		super(5, "max");
+		super();
 		System.out.println("GrandSon Constructor");
 	}
 	public static void main(String[] args) {
