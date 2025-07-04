@@ -19,7 +19,11 @@ public class Teacher {
 		System.out.println("My subject is "+subject);
 		System.out.println("Teaching regular class. as a regular teacher.");
 	}
+	private static void testPrivate() {
+
+	}
 	void giveActivity() {
+		testPrivate();
 		System.out.println("Teacher giving activity.");
 	}
 }

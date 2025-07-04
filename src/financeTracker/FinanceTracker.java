@@ -26,10 +26,6 @@ public class FinanceTracker {
 			     Transaction.setCount(count+1);
 			}
 		}
-		private int returnNine(){
-			this.test = 6;
-			return 9;
-		}
 		void showSummary() {
 			System.out.println(transactions.size());
 			for(Transaction transac : transactions) {
